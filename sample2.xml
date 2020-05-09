@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Lab>
+	<PatientName>Abhijit</PatientName>
+	<Age>
+		<Date>12-09-1987</Date>
+	</Age>
+</Lab>
