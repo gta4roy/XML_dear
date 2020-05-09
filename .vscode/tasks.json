@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build with clang",
+            "type": "shell",
+            "command": "clang++",
+        
+            "args": [
+               "-std=c++17",
+               "-stdlib=libc++",
+               "-lboost_system",
+               "-lboost_filesystem",
+               "-lxerces-c",
+               "main.cpp",
+               "XMLReader.cpp",
+               "Nodes.cpp",
+               "JSonWriter.cpp",
+               "-o",
+                "application.out",
+                "--debug"
+            ],
+        
+            "group": {"kind"  :"build" ,"isDefault":true}
+        }
+    ]
+}
